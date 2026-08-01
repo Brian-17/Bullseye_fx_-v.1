@@ -1,3 +1,5 @@
+import LoginForm from "../../components/LoginForm";
+
 export default function LoginPage() {
   return (
     <main
@@ -27,14 +29,11 @@ export default function LoginPage() {
           Login to Bullseye FX
         </h1>
 
-        <input
-          type="email"
-          placeholder="Email Address"
-          style={{
-            width: "100%",
-            padding: "12px",
-            marginBottom: "15px",
-          }}
+        <LoginForm />
+      </div>
+    </main>
+  );
+}          }}
         />
 
         <input
