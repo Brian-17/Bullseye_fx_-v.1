@@ -1,3 +1,5 @@
+import StatsCard from "../../components/StatsCard";
+
 export default function DashboardPage() {
   return (
     <main
@@ -8,11 +10,27 @@ export default function DashboardPage() {
         padding: "40px",
       }}
     >
-      <h1 style={{ fontSize: "36px", marginBottom: "20px" }}>
-        Dashboard
+      <h1
+        style={{
+          fontSize: "36px",
+          marginBottom: "30px",
+        }}
+      >
+        Bullseye FX Dashboard
       </h1>
 
-      <p>Welcome to your Bullseye FX Dashboard.</p>
+      <div
+        style={{
+          display: "flex",
+          gap: "20px",
+          flexWrap: "wrap",
+        }}
+      >
+        <StatsCard title="Account Balance" value="$10,250" />
+        <StatsCard title="Win Rate" value="82%" />
+        <StatsCard title="Trades Taken" value="148" />
+        <StatsCard title="Monthly Profit" value="+18.4%" />
+      </div>
     </main>
   );
 }
