@@ -1,40 +1,48 @@
 export default function Features() {
   const features = [
-    "📚 Forex Academy",
-    "📈 Premium Trading Signals",
-    "🤖 AI Market Analysis",
-    "📖 Trading Journal",
-    "📅 Economic Calendar",
-    "👥 Affiliate Program",
+    {
+      title: "📚 Forex Academy",
+      description: "Learn SMC, ICT and Price Action from beginner to advanced."
+    },
+    {
+      title: "🤖 AI Trade Analysis",
+      description: "Get AI-powered market insights and trading ideas."
+    },
+    {
+      title: "📊 Live Trading Sessions",
+      description: "Join live analysis and mentorship sessions."
+    },
+    {
+      title: "🏆 Community",
+      description: "Interact with traders and grow together."
+    }
   ];
 
   return (
-    <section
-      style={{
-        background: "#111827",
-        color: "white",
-        padding: "70px 20px",
-      }}
-    >
-      <h2
-        style={{
-          textAlign: "center",
-          fontSize: "40px",
-          marginBottom: "40px",
-        }}
-      >
+    <section className="bg-gray-950 text-white py-20 px-8">
+      <h2 className="text-4xl font-bold text-center mb-12">
         Why Choose Bullseye FX?
       </h2>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-          gap: "20px",
-          maxWidth: "1100px",
-          margin: "0 auto",
-        }}
-      >
+      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {features.map((feature) => (
+          <div
+            key={feature.title}
+            className="rounded-xl border border-gray-800 p-6 hover:border-yellow-500 transition"
+          >
+            <h3 className="text-2xl font-semibold mb-4">
+              {feature.title}
+            </h3>
+
+            <p className="text-gray-400">
+              {feature.description}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}      >
         {features.map((feature) => (
           <div
             key={feature}
