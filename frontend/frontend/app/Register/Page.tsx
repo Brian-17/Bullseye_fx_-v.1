@@ -1,3 +1,5 @@
+import RegisterForm from "../../components/RegisterForm";
+
 export default function RegisterPage() {
   return (
     <main
@@ -27,59 +29,7 @@ export default function RegisterPage() {
           Create Your Bullseye FX Account
         </h1>
 
-        <input
-          type="text"
-          placeholder="Full Name"
-          style={{
-            width: "100%",
-            padding: "12px",
-            marginBottom: "15px",
-          }}
-        />
-
-        <input
-          type="email"
-          placeholder="Email Address"
-          style={{
-            width: "100%",
-            padding: "12px",
-            marginBottom: "15px",
-          }}
-        />
-
-        <input
-          type="password"
-          placeholder="Password"
-          style={{
-            width: "100%",
-            padding: "12px",
-            marginBottom: "15px",
-          }}
-        />
-
-        <input
-          type="password"
-          placeholder="Confirm Password"
-          style={{
-            width: "100%",
-            padding: "12px",
-            marginBottom: "20px",
-          }}
-        />
-
-        <button
-          style={{
-            width: "100%",
-            padding: "14px",
-            background: "#fbbf24",
-            border: "none",
-            borderRadius: "8px",
-            fontWeight: "bold",
-            cursor: "pointer",
-          }}
-        >
-          Create Account
-        </button>
+        <RegisterForm />
       </div>
     </main>
   );
