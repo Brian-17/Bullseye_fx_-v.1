@@ -1,4 +1,5 @@
 import StatsCard from "../../components/StatsCard";
+import PerformanceChart from "../../components/PerformanceChart";
 
 export default function DashboardPage() {
   return (
@@ -31,6 +32,8 @@ export default function DashboardPage() {
         <StatsCard title="Trades Taken" value="148" />
         <StatsCard title="Monthly Profit" value="+18.4%" />
       </div>
+
+      <PerformanceChart />
     </main>
   );
 }
