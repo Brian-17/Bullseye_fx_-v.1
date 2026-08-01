@@ -1,5 +1,6 @@
 import StatsCard from "../../components/StatsCard";
 import PerformanceChart from "../../components/PerformanceChart";
+import RecentSignals from "../../components/RecentSignals";
 
 export default function DashboardPage() {
   return (
@@ -34,6 +35,10 @@ export default function DashboardPage() {
       </div>
 
       <PerformanceChart />
+
+      <RecentSignals />
     </main>
+  );
+}    </main>
   );
 }
